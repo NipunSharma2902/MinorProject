@@ -1,0 +1,27 @@
+This is the repo where we will upload our code and everything as we go. 
+It's better this way because once you will upload your work, everyone else can
+see it easily without emailing each other and stuff. Will also help in keeping a log of everything.
+
+To know how to use github, you can just watch any youtube tutorial or something, anything.
+And as demo, any code you have written till now, just upload that in this repo. Make sure your file names
+are self explanatory so that others can understand.
+
+Basically learn the following commands:
+1. git clone
+2. git Push
+3. git Pull
+4. git Commit
+5. git add
+6. git status
+7. git log
+8. git reset
+
+The way you do this is,
+1. you make some changes to the repo.
+2. you go to gitbash, and check status.
+3. you stage your changes if you feel like they are it.
+4. you commit it
+5. you push it to the existing repo
+
+Initially you'll have to clone the repository but 
+after that its pretty easy.
