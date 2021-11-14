@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.slider{
+    border: black;
+    position: relative;
+    overflow:hidden;
+}
+
+#navbar{
+    position:fixed;
+    background-color: rgb(124, 172, 194);
+    height:10vh;
+    width:100vw;
+    text-align:left;
+}
+
+#top_icon{
+    padding:10px;
+    font-size: 40px;
+}
+
+#navigation{
+    display: inline-block;
+    margin-left: 60vw;
+}
+
+#navigation button{
+    background-color: rgb(238, 208, 214);
+    size: 100px;
+}
+
+#s1{
+    margin-top:10vh ;
+    background-color: khaki;
+    height:90vh;
+}
+
+#s2{
+    background-color: cornflowerblue;
+    height:190vh;
+}
+
+#s3{
+    background-color: greenyellow;
+    height:90vh;
+}
+
+#s4{
+    background-color: cadetblue;
+    height:90vh;
+}
+
+#graph{
+    background-color: aliceblue;
+    margin-left:5vw;
+    margin-top:10vh;
+    height:50vh;
+    width:40vw;
+}
+
+#myChart{
+    max-width: 1000px;  
+}
+
