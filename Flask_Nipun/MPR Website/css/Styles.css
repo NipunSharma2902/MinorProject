@@ -96,7 +96,7 @@
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 900px) {
   .navbar__container {
     display: flex;
     justify-content: space-between;
@@ -107,19 +107,29 @@
     padding: 0;
   }
 
-  .navbar__menu {
+  .navbar__menu{
     display: grid;
     grid-template-columns: auto;
     margin: 0;
     width: 100%;
     position: absolute;
-    top: -1000px;
+    background: #131313;
+    top: -500%;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: -1;
+    z-index: 99;
+    height: 60vh;
+    font-size: 1.6rem;
   }
 
-  .navbar__menu.active {
+  /*This active section is not working right now. Everything seems to be right. The option button(3 bars 
+  on the upper right seems to be not interacting. */
+  .navbar__menu:active{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
     background: #131313;
     top: 100%;
     opacity: 1;
@@ -133,13 +143,6 @@
     padding-left: 25px;
   }
 
-  .navbar__toggle .bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background: #fff;
-  }
 
   .navbar__item {
     width: 100%;
@@ -150,6 +153,14 @@
     padding: 2rem;
     width: 100%;
     display: table;
+  }
+
+  .navbar__toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
   }
 
   .navbar__btn {
@@ -176,6 +187,7 @@
     display: block;
     cursor: pointer;
   }
+
 
   #mobile-menu.is-active .bar:nth-child(2) {
     opacity: 0;
@@ -211,26 +223,32 @@
     height: 5.5rem;
 }
 
-.background{
-    background-image: url('D:/Minor Project/MPR Website/images/web_back.png');
-    background-repeat: 0;
-    background-size: cover;
-
-}
-
 .image{
-    opacity: 0.5;
+    opacity: 0.7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    transition: all 0.3s ease;
 }
 
 .image:hover{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     opacity: 1;
+    width: 31%;
+    transition: all 0.3s ease;
 }
 
 .content {
-    background:rgb(240, 204, 87);
     border: 2px solid black;
 }
 
-.content:hover{
-    background: rgb(169, 240, 216);
+.body{
+  background: #C33764;
+  background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+  background: linear-gradient(to right, #1D2671, #C33764);
+  color: #dad6d6;
+  font-style: italic;
 }
