@@ -122,6 +122,8 @@
     font-size: 1.6rem;
   }
 
+  /*This active section is not working right now. Everything seems to be right. The option button(3 bars 
+  on the upper right seems to be not interacting. */
   .navbar__menu:active{
     display: grid;
     grid-template-columns: auto;
@@ -153,6 +155,14 @@
     display: table;
   }
 
+  .navbar__toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+  }
+
   .navbar__btn {
     padding-bottom: 2rem;
   }
@@ -174,17 +184,12 @@
   }
 
   .navbar__toggle .bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background: #fff;
     display: block;
     cursor: pointer;
   }
 
 
-  #mobile-menu.is-active.bar:nth-child(2) {
+  #mobile-menu.is-active .bar:nth-child(2) {
     opacity: 0;
   }
 
