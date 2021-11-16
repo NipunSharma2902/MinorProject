@@ -10,7 +10,7 @@ body{
     justify-content:center;
     align-items:center;
     min-height:100vh;
-    background:rgb(100, 216, 236);
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 }
 
 .gfg{
