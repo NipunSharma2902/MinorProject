@@ -57,23 +57,23 @@ section{
 }
 
 #home{
-    background-color: #363636;
+    background-color: #38BA9C;
 }
 
 #about{
-    background-color: #474747;
+    background-color: #2E3047;
 }
 
 #product{
-    background-color: #363636;
+    background-color: #43455C;
 }
 
 #pricing{
-    background-color: #cc527a; 
+    background-color: #3C3F56; 
 }
 
 #contact{
-    background-color:  #a8a7a8;
+    background-color:  #707797;
 }
 
 h1{
@@ -92,22 +92,15 @@ p{
         color: #fff;
 }
 
-
-
-
-
-
-
-
   
 .card{
     position:relative;
     width:360px;
     height:300px;
     margin:60px;
-    box-shadow:20px 20px 50px rgb(0,0,0,0.4);
+    box-shadow:20px 20px 50px #43455C;
     border-radius:15px;
-    background:rgba(3, 103, 253, 0.219);
+    background: #515151;
     overflow:hidden;
     display:flex;
     justify-content:center;
