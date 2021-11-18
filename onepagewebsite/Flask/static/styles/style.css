@@ -32,6 +32,7 @@ header{
 }
 
 #menu li{
+    z-index: 50;
     list-style: none;
     display: inline-block;
     margin: 20px;
@@ -52,27 +53,63 @@ header{
 section{
     width: 100%;
     float: left;
-    height: 100vh;
+    height: 25cm;
     position: relative;
 }
 
+
+
+
+.column{
+    float: left;
+    width: 30%;
+    padding: 5px;
+}
+
+.row {margin: 0 0px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
 #home{
+    background-image: url("../images/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: 1300px 944px;
     background-color: #363636;
 }
 
 #about{
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: 1300px 944px;
     background-color: #474747;
 }
 
 #product{
-    background-color: #363636;
+    background-image: url("../images/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: 1300px 35cm;
+    background-color: #a8a7a8;
+    height: 35cm;
 }
 
 #pricing{
+    background-image: url("../images/background4.jpg");
+    background-repeat: no-repeat;
+    background-size: 1300px 944px;
     background-color: #cc527a; 
 }
 
 #contact{
+    background-image: url("../images/background5.jpg");
+    background-repeat: no-repeat;
+    background-size: 1300px 944px;
     background-color:  #a8a7a8;
 }
 
@@ -98,7 +135,6 @@ p{
 
 
 
-
   
 .card{
     position:relative;
@@ -107,7 +143,7 @@ p{
     margin:60px;
     box-shadow:20px 20px 50px rgb(0,0,0,0.4);
     border-radius:15px;
-    background:rgba(3, 103, 253, 0.219);
+    background:rgba(3, 103, 253, 0.3);
     overflow:hidden;
     display:flex;
     justify-content:center;
