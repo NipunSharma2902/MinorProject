@@ -9,7 +9,8 @@
 
 <body>
 
-    <header class="head">
+    <header>
+        
         <a href="#"><img src="{{ url_for('static',filename='images/logo.png') }}" alt=""></a>
         <ul id="menu">
             <li class="navbar_links"><a href="#home">Home</a></li>
@@ -19,22 +20,64 @@
             <li class="navbar_links"><a href="#contact">Contact Us</a></li>
         </ul>
     </header>
+
+    
     <section id="home">
-        <h1>This Is Home</h1>
+        
+        
+        <h1 style="font-size: 1.5cm;
+         text-align: center;">
+
+         Stock Market Monitor And Predictor
+
+        </h1>
     </section>
 
-    <section id="about"><h1>This Is Where News api will go probably</h1></section>
+    <section id="about">
+        
+
+        <h1>
+            This Is Where News api will go probably
+        </h1>
+    </section>
+
+
+
     <section id="product">
 
-
-
-     <!-- TradingView Widget BEGIN -->
+<div class="row">
+<!--1st Widget BEGIN -->
+<div class="column">
 <div class="card">
-    <div class="tradingview-widget-container__widget"></div>
+
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+    {
+    "symbol": "NASDAQ:AAPL",
+    "width": 350,
+    "height": 220,
+    "locale": "en",
+    "dateRange": "12M",
+    "colorTheme": "dark",
+    "trendLineColor": "rgba(41, 98, 255, 1)",
+    "underLineColor": "rgba(41, 98, 255, 0.3)",
+    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+    "isTransparent": true,
+    "autosize": false,
+    "largeChartUrl": ""
+  }
+    </script>
+  </div>
+  </div>
+  <!--1st Widget END -->
+
+
+<!--2nd Widget Begins-->
+  <div class="column">
+  <div class="card">
     
     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
     {
-    "symbol": "NASDAQ:TSLA",
+    "symbol": "NASDAQ:MSFT",
     "width": 350,
     "height": 220,
     "locale": "en",
@@ -49,30 +92,192 @@
   }
     </script>
   </div>
-  <!-- TradingView Widget END -->
+  </div>
+<!--2nd Widget Ends-->
+
+
+<!--3rd Widget Begins-->
+  <div class="column">
+  <div class="card">
         
-        <h1>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            This Is With all the stock market prediction
-        </h1>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+    {
+    "symbol": "NASDAQ:AMZN",
+    "width": 350,
+    "height": 220,
+    "locale": "en",
+    "dateRange": "12M",
+    "colorTheme": "dark",
+    "trendLineColor": "rgba(159, 197, 232, 1)",
+    "underLineColor": "rgba(41, 98, 255, 0.3)",
+    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+    "isTransparent": true,
+    "autosize": false,
+    "largeChartUrl": ""
+  }
+    </script>
+  </div>
+</div>
+<!--3rd Widget Ends-->
+</div>
+
+<div class="row">
+<!--4th Widget Begins-->
+<div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "NASDAQ:FB",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+  <!--4th Widget Ends-->
+
+  <!--5th Widget Begins-->
+  <div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "NASDAQ:GOOG",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+  <!--5th Widget Ends-->
+
+  <!--6th Widget Begins-->
+  <div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "NASDAQ:TSLA",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+  <!--6th Widget Ends-->
+</div>
+
+<div class="row">
+  <!--7th Widget Begins-->
+  <div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "BSE:SENSEX",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+  <!--7th Widget Ends-->
+
+  <!--8th Widget Begins-->
+  <div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "BINANCE:BTCUSDT",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+  <!--8th Widget Ends-->
+
+  <!--9th Widget Begins-->
+  <div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "BINANCE:ETHUSDT",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+<!--9th Widget Ends-->
+</div>
+        
+        
     </section>
+
+
     <section id="pricing"><h1>This Is can be Anything</h1></section>
+
+
     <section id="contact"><h1>This Is Us,contact info etc etc</h1></section>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
