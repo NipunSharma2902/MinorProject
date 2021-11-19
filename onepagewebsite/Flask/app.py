@@ -18,9 +18,12 @@ for result in results:
     if(result['link'] == None):
         continue
     else:
-        article_head.append(result['title'])
-        article_description.append(result['description'])
-        article_link.append(result['link'])
+        if(result['description'] == None):
+            continue
+        else:
+            article_head.append(result['title'])
+            article_description.append(result['description'])
+            article_link.append(result['link'])
 
 
 length=len(article_head)

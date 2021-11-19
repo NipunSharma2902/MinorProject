@@ -14,10 +14,10 @@
         <a href="#"><img src="{{ url_for('static',filename='images/logo.png') }}" alt=""></a>
         <ul id="menu">
             <li class="navbar_links"><a href="#home">Home</a></li>
-            <li class="navbar_links"><a href="#about">News</a></li>
-            <li class="navbar_links"><a href="#product">Stock Market</a></li>
-            <li class="navbar_links"><a href="#pricing">Miscellanous</a></li>
-            <li class="navbar_links"><a href="#contact">Contact Us</a></li>
+            <li class="navbar_links"><a href="#stock">Stock Market</a></li>
+            <li class="navbar_links"><a href="#prediction">Prediction</a></li>
+            <li class="navbar_links"><a href="#news">News</a></li>
+            <li class="navbar_links"><a href="#about">Contact Us</a></li>
         </ul>
     </header>
 
@@ -33,30 +33,9 @@
         </h1>
     </section>
 
-    <section id="about">
-
-   
-      <div class="news">
-        
-        <ul>
-          {% for x in range(length) %}
-            <li>
-            <h3>
-              <a href="{{ article_link[x] }}">
-                {{ article_head[x] }}
-              </a>
-            </h3>
-            </li>
-          {% endfor %}
-        </ul>
-
-      </div>
-        
-    </section>
 
 
-
-    <section id="product">
+    <section id="stock">
 
 <div class="row">
 <!--1st Widget BEGIN -->
@@ -286,10 +265,48 @@
     </section>
 
 
-    <section id="pricing"><h1>This Is can be Anything</h1></section>
+    <section id="prediction"><h1>This Is can be Anything</h1></section>
 
 
-    <section id="contact"><h1>This Is Us,contact info etc etc</h1></section>
+    <section id="news">
+
+   
+             
+      <ul>
+      {% for x in range(0,2) %}
+        <div class="row">
+        {% for x in range(0,3) %}
+          <div class="column">
+          <li>
+            <div class="head">
+              <b> {{ article_head[x] }}: </b>
+            </div>
+
+            <br>
+
+            <div class="desc">
+            {{ article_description[x] }}
+            </div>
+            
+            <br><br><br>
+            
+            <div class="read">
+            <a href="{{ article_link[x] }}" target="_blank">
+              Read More...</a>
+          </div>
+
+          </li>
+        </div>
+        {% endfor %}
+        </div>
+      {% endfor %}
+      </ul>
+
+      
+  </section>
+
+
+    <section id="about"><h1>This Is Us,contact info etc etc</h1></section>
 
 </body>
 
