@@ -34,11 +34,24 @@
     </section>
 
     <section id="about">
-        
 
-        <h1>
-            This Is Where News api will go probably
-        </h1>
+   
+      <div class="news">
+        
+        <ul>
+          {% for x in range(length) %}
+            <li>
+            <h3>
+              <a href="{{ article_link[x] }}">
+                {{ article_head[x] }}
+              </a>
+            </h3>
+            </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+        
     </section>
 
 
