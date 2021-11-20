@@ -16,5 +16,5 @@ for result in results:
         i = i+1
 
 for k in content.keys():
-    print(content[k][:500])
+    print(content[k][:200])
     print(" ")

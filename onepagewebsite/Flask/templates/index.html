@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>One Page Website</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
 </head>
 
@@ -14,10 +15,10 @@
         <a href="#"><img src="{{ url_for('static',filename='images/logo.png') }}" alt=""></a>
         <ul id="menu">
             <li class="navbar_links"><a href="#home">Home</a></li>
-            <li class="navbar_links"><a href="#about">News</a></li>
-            <li class="navbar_links"><a href="#product">Stock Market</a></li>
-            <li class="navbar_links"><a href="#pricing">Miscellanous</a></li>
-            <li class="navbar_links"><a href="#contact">Contact Us</a></li>
+            <li class="navbar_links"><a href="#stock">Stock Market</a></li>
+            <li class="navbar_links"><a href="#prediction">Prediction</a></li>
+            <li class="navbar_links"><a href="#news">News</a></li>
+            <li class="navbar_links"><a href="#about">Contact Us</a></li>
         </ul>
     </header>
 
@@ -33,17 +34,9 @@
         </h1>
     </section>
 
-    <section id="about">
-        
-
-        <h1>
-            This Is Where News api will go probably
-        </h1>
-    </section>
 
 
-
-    <section id="product">
+    <section id="stock">
 
 <div class="row">
 <!--1st Widget BEGIN -->
@@ -273,10 +266,50 @@
     </section>
 
 
-    <section id="pricing"><h1>This Is can be Anything</h1></section>
+    <section id="prediction"><h1>This Is can be Anything</h1></section>
 
 
-    <section id="contact"><h1>This Is Us,contact info etc etc</h1></section>
+    <section id="news">
+
+   
+             
+      <ul>
+      {% for i in range(0,2) %}
+        <div class="row">
+        {% for j in range(0,3) %}
+          {% set x = (i*3)+j %}
+          <div class="column">
+          <li>
+            <div class="head">
+              <b> {{ article_head[x] }}: </b>
+            </div>
+
+            <br>
+
+            <div class="desc">
+            {{ article_description[x][:200] }}....
+            </div>
+            
+            <br><br><br>
+            
+            <div class="read">
+            <a href="{{ article_link[x] }}" target="_blank">
+              Read More...</a>
+          </div>
+
+          </li>
+        </div>
+        
+        {% endfor %}
+        </div>
+      {% endfor %}
+      </ul>
+
+      
+  </section>
+
+
+    <section id="about"><h1>This Is Us,contact info etc etc</h1></section>
 
 </body>
 
