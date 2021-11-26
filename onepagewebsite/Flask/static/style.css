@@ -97,7 +97,7 @@ section{
 
 
 #home{
-    background-image: url("../images/background1.jpg");
+    background-image: url("../static/images/background1.jpg");
     background-repeat: no-repeat;
     background-size: 1300px 944px;
     background-color: #363636;
@@ -123,7 +123,7 @@ section{
     
     background-repeat: no-repeat;
     background-size: 1300px 944px;
-    background-color: #cc527a; 
+    background-color: #58cce0; 
 }
 
 #about{
