@@ -19,3 +19,9 @@ function openCity(evt, tickerName) {
     evt.currentTarget.className += " active";
 
   }
+
+  
+
+  function defaultTab(){
+    document.getElementById("Apple").click();  
+  }
