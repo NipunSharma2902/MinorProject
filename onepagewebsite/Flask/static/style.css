@@ -189,7 +189,7 @@ p{
     margin: 150px 0px 50px 90px;
     border-radius: 15px;
     box-shadow:20px 20px 50px rgba(0,0,0,0.7);
-    background: linear-gradient(to bottom, #3633ff 0%, #ff99cc 100%);
+    background: linear-gradient(to bottom, #4a47fa 0%, #ff99cc 100%);
     overflow:hidden;
     transition: all 0.2s ease;
     
