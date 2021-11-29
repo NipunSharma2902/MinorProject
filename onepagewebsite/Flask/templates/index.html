@@ -301,9 +301,9 @@
     </section>
 
 
-    <section id="news">
 
-   
+
+    <section id="news">
              
       <ul>
       {% for i in range(0,2) %}
@@ -313,7 +313,7 @@
           <div class="column">
           <li>
             <div class="head">
-              <u><b> {{ article_head[x] }}: </b></u>
+              <u><b> {{ article_head[x][:50] }}... </b></u>
             </div>
 
             <br>
