@@ -38,7 +38,8 @@
 
 
     <section id="stock">
-
+    <br><br>
+    
 <div class="row">
 <!--1st Widget BEGIN -->
 <div class="column">
@@ -277,27 +278,26 @@
 
       <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Apple')" id="defaultOpen">Apple</button>
   <button class="tablinks" onclick="openCity(event, 'Google')">Google</button>
-  <button class="tablinks" onclick="openCity(event, 'Tesla')">Tesla</button>
+  <button class="tablinks" onclick="openCity(event, 'Microsoft')">Microsoft</button>
+  <button class="tablinks" onclick="openCity(event, 'Netflix')">Netflix</button>
 </div>
 
 <!-- Tab content -->
-<div id="Apple" class="tabcontent">
-  <h3>Apple Stock</h3>
-</div>
-
 <div id="Google" class="tabcontent">
-  <h3>Google Stock</h3>
+  <embed type='text/html' src="{{ url_for('static', filename='goog.html') }}" height="450" width="970">
 </div>
 
-<div id="Tesla" class="tabcontent">
-  <h3>Tesla Stock</h3>
+<div id="Microsoft" class="tabcontent">
+  <embed type='text/html' src="{{ url_for('static', filename='msft.html') }}" height="450" width="970">
+</div>
+
+<div id="Netflix" class="tabcontent">
+  <embed type='text/html' src="{{ url_for('static', filename='nflx.html') }}" height="450" width="970">
 </div>
 
 </div>
-    
-    
+ 
     </section>
 
 
