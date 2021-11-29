@@ -69,7 +69,7 @@ model.compile(loss='mean_squared_error',optimizer='adam')
 
 #model.save_weights("NFLX.h5")
 
-model.load_weights("NFLX.h5")
+model.load_weights("D:/Minor Project/Repository/MinorProject/onepagewebsite/Flask/Model/NFLX.h5")
 
 
 ### Lets Do the prediction and check performance metrics
@@ -166,5 +166,4 @@ for x in range (0, numdays):
 
 import plotly.graph_objects as go
 fig = go.Figure([go.Scatter(x=dateList, y=df['predict'])])
-fig.show()
-fig.write_html('../static/NFLX.html')
+fig.write_html('D:/Minor Project/Repository/MinorProject/onepagewebsite/Flask/static/NFLX.html')
