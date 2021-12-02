@@ -26,8 +26,8 @@ def model_train(df):
 
     global df1, scaler, X_train, X_test, test_data, train_data, model
 
-    df.to_csv('Model Data/STOCK.csv')
-    df=pd.read_csv('Model Data/STOCK.csv')
+    df.to_csv('onepagewebsite/Model Data/STOCK.csv')
+    df=pd.read_csv('onepagewebsite/Model Data/STOCK.csv')
     df1=df.reset_index()['close']
 
     scaler=MinMaxScaler(feature_range=(0,1))
@@ -136,9 +136,9 @@ def model_predict(df):
     df3.extend(lst_output)
     df3=scaler.inverse_transform(df3).tolist()
     df4=pd.DataFrame(df3, columns=['predict'])
-    df=pd.read_csv("Model Data/STOCK.csv")
+    df=pd.read_csv("onepagewebsite/Model Data/STOCK.csv")
     df=pd.concat([df,df4], axis=1)
-    df.to_csv("Model Data/predict.csv")
+    df.to_csv("onepagewebsite/Model Data/predict.csv")
 
 
 
@@ -158,12 +158,12 @@ df = pdr.get_data_tiingo('GOOG', api_key='42339adc748250f3771ee40550b91af60a4074
 model_train(df)
 
 #model.save_weights("Model Data/GOOG.h5")
-model.load_weights("Model Data/GOOG.h5")
+model.load_weights("onepagewebsite/Model Data/GOOG.h5")
 
 ### Lets Do the prediction and check performance metrics
 model_predict(df)
 
-df=pd.read_csv("Model Data/predict.csv")
+df=pd.read_csv("onepagewebsite/Model Data/predict.csv")
 fig = go.Figure([go.Scatter(x=dateList, y=df['predict'])])
 fig.write_html('onepagewebsite/Flask/static/GOOG.html')
 
@@ -179,12 +179,12 @@ df = pdr.get_data_tiingo('MSFT', api_key='42339adc748250f3771ee40550b91af60a4074
 model_train(df)
 
 #model.save_weights("Model Data/MSFT.h5")
-model.load_weights("Model Data/MSFT.h5")
+model.load_weights("onepagewebsite/Model Data/MSFT.h5")
 
 ### Lets Do the prediction and check performance metrics
 model_predict(df)
 
-df=pd.read_csv("Model Data/predict.csv")
+df=pd.read_csv("onepagewebsite/Model Data/predict.csv")
 fig = go.Figure([go.Scatter(x=dateList, y=df['predict'])])
 fig.write_html('onepagewebsite/Flask/static/MSFT.html')
 
@@ -200,12 +200,12 @@ df = pdr.get_data_tiingo('NFLX', api_key='42339adc748250f3771ee40550b91af60a4074
 model_train(df)
 
 #model.save_weights("Model Data/NFLX.h5")
-model.load_weights("Model Data/NFLX.h5")
+model.load_weights("onepagewebsite/Model Data/NFLX.h5")
 
 ### Lets Do the prediction and check performance metrics
 model_predict(df)
 
-df=pd.read_csv("Model Data/predict.csv")
+df=pd.read_csv("onepagewebsite/Model Data/predict.csv")
 fig = go.Figure([go.Scatter(x=dateList, y=df['predict'])])
 fig.write_html('onepagewebsite/Flask/static/NFLX.html')
 
