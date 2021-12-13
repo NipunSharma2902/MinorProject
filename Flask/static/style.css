@@ -100,7 +100,7 @@ section{
 #home{
     background-image: url("../static/images/background1.jpg");
     background-repeat: no-repeat;
-    background-size: 1300px 944px;
+    background-size: 1350px 944px;
     background-color: #363636;
 }
 
@@ -121,7 +121,7 @@ section{
 
 #about{
     background-color:  #444d57;
-    height: 30cm;
+    height: 24cm;
 }
 
 h1{
@@ -132,13 +132,7 @@ h1{
     color: #fff;
 }
 
-p{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-}
+
 
 
 
@@ -301,13 +295,21 @@ p{
 
 
 
-
+  pre{
+    position: absolute;
+    margin-left: 50px;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
 
 
 .section_heading{
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 5rem;
 }
 
-  
+.names{
+    color: rgb(255, 255, 255);
+}
