@@ -5,9 +5,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import LSTM
+from tensorflow.python.keras.models import Sequential
+from tensorflow.python.keras.layers import Dense
+from tensorflow.python.keras.layers import LSTM
 import tensorflow as tf
 import math
 from sklearn.metrics import mean_squared_error
@@ -68,7 +68,7 @@ def model_train(df):
     #model.fit(X_train,y_train,validation_data=(X_test,ytest),epochs=100,batch_size=64,verbose=1)
 
 
-
+dateList = []
 
 
 def model_predict(df):
@@ -128,9 +128,6 @@ def model_predict(df):
             lst_output.extend(yhat.tolist())
             i=i+1
 
-    day_new=np.arange(1,100)
-    day_pred=np.arange(101,131)
-
 
     df3=df1.tolist()
     df3.extend(lst_output)
@@ -140,13 +137,13 @@ def model_predict(df):
     df=pd.concat([df,df4], axis=1)
     df.to_csv("Model Data/predict.csv")
 
+    dateDf = pd.read_csv("Model Data/STOCK.csv")
+    dateList=dateDf['date']
 
 
-b=datetime.datetime.today()
-a = b- datetime.timedelta(days=1259)
-numdays = 1288
-dateList = []
-for x in range (0, numdays):
+
+a=datetime.datetime.today()
+for x in range (0, 30):
     dateList.append(a + datetime.timedelta(days=x))
 
 
